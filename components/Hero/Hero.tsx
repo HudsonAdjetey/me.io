@@ -1,15 +1,10 @@
 "use client";
 import React from "react";
-import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import { motion } from "framer-motion";
 import { Copy, Eye, Pointer } from "lucide-react";
 import Image from "next/image";
 import { PortImages } from "../constants";
 const Hero = () => {
-  const handleCopy = (text: string) => {
-    navigator.clipboard.writeText(text);
-  };
-
   return (
     <section className="mt-[3rem] overflow-hidden">
       <div className="flex flex-col my-20 gap-3 text-center">
@@ -29,7 +24,7 @@ const Hero = () => {
         <p className="text-base text-neutral-100 select-none">
           Hi, I'm Emmanuel Hudson, a seasoned web developer.
         </p>
-        <button className="bg-nav-gradient flex items-center gap-3 w-fit border text-white/70 hover:text-white transition duration-200 border-neutral-600 backdrop-blur-md shadow-md px-3 py-2 self-center my-3 rounded-md">
+        <button className="btn-shine bg-nav-gradient flex items-center gap-3 w-fit border text-white/70 hover:text-white transition duration-200 border-neutral-600 backdrop-blur-md shadow-md px-3 py-2 self-center my-3 rounded-md">
           <span>Take a tour</span>
           <span>
             <Pointer className="rotate-180" size={16} />
@@ -78,33 +73,6 @@ const Hero = () => {
           <h3 className="p-5 text-2xl max-md:text-xl text-white z-20 relative">
             Always building my Tech Stack
           </h3>
-        </div>
-      </div>
-      <div className="w-[86%]   mx-auto  mt-[2rem] gap-4 grid-cols-3 max-md:grid-cols-1">
-        <div className="bg-boxes flex items-center  overflow-hidden max-md:h-[240px]   border border-neutral-600 rounded-[23px] pl-5 col-span-2 row-span-2 max-lg:col-span-1 ">
-          <div className="md:w-1/2 py-4 ">
-            <p className="font-mono uppercase font-semibold text-neutral-400 my-2">
-              The latest event
-            </p>
-            <h2 className="text-2xl ">
-              Currently building an Ecommerce incoporated with top wearable
-              brands
-            </h2>
-          </div>
-          <Image
-            src={PortImages.SheetCode}
-            alt="tech stack"
-            width={200}
-            height={200}
-            className="h-full max-md:hidden w-1/2 -bottom-5 object-contain ml-4   "
-            placeholder="blur"
-            blurDataURL={
-              typeof PortImages.SheetCode === "string"
-                ? PortImages.SheetCode
-                : undefined
-            }
-            sizes="(max-md:768px) 40vw"
-          />
         </div>
       </div>
     </section>
