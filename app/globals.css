@@ -70,3 +70,96 @@
     @apply dark bg-[#000319] bg-grid-pattern text-white;
   }
 }
+
+.grid_home {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.grid_home .gr1 {
+  background-color: aliceblue;
+  grid-column: span 1;
+  grid-row: span 2;
+  transition: all 0.4s;
+  border-radius: 23px;
+
+  &:hover img {
+    transform: scale(1.05);
+    transition: all 0.4s;
+  }
+}
+
+.grid_home .gr2 {
+  grid-column: span 1;
+  grid-row: span 1;
+  transition: all 0.4s;
+  background-color: linear-gradient(103.4deg, #030411 16.66%, #0a0b16 81.61%);
+  mix-blend-mode: screen;
+  border-radius: 23px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+
+  &:hover img {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+.grid_home .gr3 {
+  grid-column: span 1;
+  grid-row: span 1;
+  transition: all 0.4s;
+  border-radius: 23px;
+  background: linear-gradient(103.4deg, #04071D 16.66%, #0C0E23 81.61%);
+  border-radius: 23px;
+
+}
+
+@layer utilities {
+  .mx_bg {
+    background-color: linear-gradient(103.4deg, #030411 16.66%, #0a0b16 81.61%);
+  }
+}
+
+/* .scroll-watcher {
+  height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 199;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1
+  }
+}
+
+.articles>img {
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range: 500px 700px;
+}
+
+
+@keyframes fade-in {
+  from {
+    scale: .8;
+    opacity: 0
+  }
+
+  to {
+    scale: 1;
+    opacity: 1
+  }
+} */

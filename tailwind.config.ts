@@ -73,8 +73,12 @@ const config = {
       },
       backgroundImage: {
         "grid-pattern": "url('@/public/assets/images/grid-pattern.svg')",
+        globe: "url('@/public/assets/images/globe.svg')",
         "nav-gradient":
           "linear-gradient(103.4deg, #0D102C 16.66%, #0C0E23 81.61%)",
+        "stroke-bg":
+          "linear-gradient(103.4deg, #04071D 16.66%, #0C0E23 81.61%)",
+        boxes: "url('@/public/assets/images/background-boxes.svg')",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
