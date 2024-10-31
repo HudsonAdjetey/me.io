@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Copy, Eye, Pointer } from "lucide-react";
+import {Pointer } from "lucide-react";
 import Image from "next/image";
 import { PortImages } from "../constants";
 const Hero = () => {

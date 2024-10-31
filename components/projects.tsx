@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
 import { IconsImg, PortImages } from "./constants";
-import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { motion } from "framer-motion";
 const ProjectsPage = () => {
   return (

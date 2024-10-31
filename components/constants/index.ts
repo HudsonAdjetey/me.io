@@ -49,3 +49,15 @@ export const IconsImg = {
   RenderIcon,
   AWSIcon,
 };
+
+import Jay from "@/public/assets/images/jay.png";
+import Hannah from "@/public/assets/images/hannah.png";
+import Clinton from "@/public/assets/images/clinton.png";
+import Obed from "@/public/assets/images/obed.png";
+
+export const TestimonialsImage = {
+  Jay,
+  Hannah,
+  Clinton,
+  Obed,
+};
