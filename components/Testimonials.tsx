@@ -4,8 +4,8 @@ import { TestimonialsImage } from "./constants";
 
 const Testimonials = () => {
   return (
-    <section className="relative  p-10 my-32">
-      <p className="text-4xl max-md:text-2xl max-sm:text-xl text-center mb-5">
+    <section id="testimonials" className="relative  p-10 my-20">
+      <p className="text-4xl max-md:text-2xl max-sm:text-xl text-center mb-20">
         What people <span className="text-[#CBACF9] font-semibold ">Say</span>{" "}
         about my work
       </p>

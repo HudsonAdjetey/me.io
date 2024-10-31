@@ -61,3 +61,16 @@ export const TestimonialsImage = {
   Clinton,
   Obed,
 };
+
+import CodeSvg from "@/public/assets/images/code_svg.svg";
+import DevSvg from "@/public/assets/images/dev_svg.svg";
+import LearnSvg from "@/public/assets/images/learn_svg.svg";
+import LightSvg from "@/public/assets/images/light_svg.svg";
+import LinearSvg from "@/public/assets/images/linear-bg.svg";
+export const SvgIcons = {
+  CodeSvg,
+  DevSvg,
+  LearnSvg,
+  LightSvg,
+  LinearSvg,
+};

@@ -3,6 +3,7 @@ import React from "react";
 import { PortImages } from "./constants";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { ArrowRight, ArrowUpFromDot } from "lucide-react";
+import { PinContainer } from "@/components/ui/3d-pin";
 
 const Card = ({
   title,

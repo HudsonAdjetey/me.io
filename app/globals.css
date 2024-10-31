@@ -66,6 +66,10 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply dark bg-[#000319] bg-grid-pattern text-white;
   }

@@ -6,6 +6,9 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import Journey from "@/components/Journey";
 import ProjectsPage from "@/components/projects";
 import Testimonials from "@/components/Testimonials";
+import WorkExperience from "@/components/WorkExperience";
+import Approach from "@/components/Approach";
+
 const page = () => {
   return (
     <main className="container py-5">
@@ -16,6 +19,10 @@ const page = () => {
       <Journey />
       <ProjectsPage />
       <Testimonials />
+      <TracingBeam>
+        <WorkExperience />
+        <Approach />
+      </TracingBeam>
     </main>
   );
 };

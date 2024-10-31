@@ -4,8 +4,8 @@ import { IconsImg, PortImages } from "./constants";
 import { motion } from "framer-motion";
 const ProjectsPage = () => {
   return (
-    <section className="my-20">
-      <h2 className="text-3xl text-center mb-10 max-md:text-2xl max-sm:text-xl">
+    <section id="projects" className="my-20">
+      <h2 className="text-3xl text-center my-20 max-md:text-2xl max-sm:text-xl">
         A small selection of <span className="text-[#CBACF9] ">recent </span>{" "}
         projects
       </h2>
@@ -15,6 +15,7 @@ const ProjectsPage = () => {
             opacity: 0,
             y: -50,
             x: -20,
+            //
           }}
           whileInView={{
             opacity: 1,

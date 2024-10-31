@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import {Pointer } from "lucide-react";
+import { Pointer } from "lucide-react";
 import Image from "next/image";
 import { PortImages } from "../constants";
 const Hero = () => {
   return (
-    <section className="mt-[3rem] overflow-hidden">
+    <section id="#home" className="mt-[3rem] overflow-hidden">
       <div className="flex flex-col my-20 gap-3 text-center">
         <motion.h1
           initial={{ opacity: 0.5, y: -80 }}
@@ -24,12 +24,15 @@ const Hero = () => {
         <p className="text-base text-neutral-100 select-none">
           Hi, I'm Emmanuel Hudson, a seasoned web developer.
         </p>
-        <button className="btn-shine bg-nav-gradient flex items-center gap-3 w-fit border text-white/70 hover:text-white transition duration-200 border-neutral-600 backdrop-blur-md shadow-md px-3 py-2 self-center my-3 rounded-md">
+        <a
+          href="#journey"
+          className="btn-shine bg-nav-gradient flex items-center gap-3 w-fit border text-white/70 hover:text-white transition duration-200 border-neutral-600 backdrop-blur-md shadow-md px-3 py-2 self-center my-3 rounded-md"
+        >
           <span>Take a tour</span>
           <span>
             <Pointer className="rotate-180" size={16} />
           </span>
-        </button>
+        </a>
       </div>
       <div className="w-[86%]  mx-auto   mt-40   max-md:grid-cols-1  grid_home ">
         <div className="relative gr1  max-md:h-[312px] overflow-hidden transition-all duration-75 rounded-md border border-neutral-700 hover:border-neutral-600">

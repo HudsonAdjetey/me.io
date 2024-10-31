@@ -243,9 +243,9 @@ const Journey = () => {
     },
   ];
   return (
-    <div className="w-full overflow-x-auto">
+    <section id="journey" className="w-full overflow-x-auto">
       <Timeline data={data} />
-    </div>
+    </section>
   );
 };
 
